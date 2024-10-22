@@ -1,3 +1,6 @@
+# This stack provides a Golang environment for building and running Golang
+# applications. It is based on the Vanilla OS Pico image.
+
 name: vanilla-golang
 base: ghcr.io/vanilla-os/pico:main
 packages: 

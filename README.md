@@ -21,12 +21,17 @@ Stacks are YAML files that describe the base distribution, the package manager, 
 Example of a stack file:
 
 ```yaml
+# This stack provides a Golang environment for building and running Golang
+# applications. It is based on the Vanilla OS Pico image.
+
 name: my-go
 base: ghcr.io/vanilla-os/pico:main
 packages: 
     - golang
 pkgmanager: apt
 ```
+
+Note the comment at the top of the file, it is a good practice to add a comment to describe the stack. 
 
 Example of a package manager file:
 
