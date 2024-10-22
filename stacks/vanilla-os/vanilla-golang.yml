@@ -1,0 +1,6 @@
+name: vanilla-golang
+base: ghcr.io/vanilla-os/pico:main
+packages: 
+- golang
+pkgmanager: apt
+builtin: false
