@@ -1,0 +1,39 @@
+name: Generate Index
+
+on:
+  push:
+    paths:
+      - "stacks/**"
+      - "pkgmanagers/**"
+  workflow_dispatch:
+
+jobs:
+  combine:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Combine Stacks and Package Managers
+        run: deno run -RW scripts/combine.ts
+
+      - name: Create Atom Feed
+        run: deno run -RW scripts/feed.ts
+
+      - name: Commit and push
+        if: github.repository == 'vanilla-os/apx-community' && github.ref == 'refs/heads/main'
+        continue-on-error: true
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add _index.json feed.xml
+          git commit -m "chore: new index"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

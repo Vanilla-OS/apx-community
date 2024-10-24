@@ -1,0 +1,31 @@
+{
+  "stacks": [
+    {
+      "name": "vanilla-golang",
+      "base": "ghcr.io/vanilla-os/pico:main",
+      "packages": [
+        "golang"
+      ],
+      "pkgmanager": "apt",
+      "builtin": false
+    }
+  ],
+  "pkgManagers": [
+    {
+      "name": "apt",
+      "model": 2,
+      "needsudo": true,
+      "cmdautoremove": "apt autoremove",
+      "cmdclean": "apt clean",
+      "cmdinstall": "apt install",
+      "cmdlist": "apt list",
+      "cmdpurge": "apt purge",
+      "cmdremove": "apt remove",
+      "cmdsearch": "apt search",
+      "cmdshow": "apt show",
+      "cmdupdate": "apt update",
+      "cmdupgrade": "apt upgrade",
+      "builtin": false
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Apx Community</title>
+  <subtitle>Live feed of new stacks and package managers from the Apx Community.</subtitle>
+  <link rel="alternate" href="https://apx.vanillaos.org/"/>
+  <updated>2024-10-24T18:33:22.931Z</updated>
+  <generator>Feed for Deno</generator>
+  <author>
+    <name>Vanilla OS Contributors</name>
+    <email>info@vanillaos.org</email>
+  </author>
+  <entry>
+    <title>New Stack: vanilla-golang</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>vanilla-golang</id>
+    <updated>2024-10-24T18:33:22.931Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: ghcr.io/vanilla-os/pico:main&lt;/li&gt;
+               &lt;li&gt;Packages: golang&lt;/li&gt;
+               &lt;li&gt;Package Manager: apt&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Package Manager: apt</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>apt</id>
+    <updated>2024-10-24T18:33:22.931Z</updated>
+    <summary>New package manager published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Model: 2&lt;/li&gt;
+               &lt;li&gt;Needs Sudo: Yes&lt;/li&gt;
+               &lt;li&gt;Command Autoremove: apt autoremove&lt;/li&gt;
+               &lt;li&gt;Command Clean: apt clean&lt;/li&gt;
+               &lt;li&gt;Command Install: apt install&lt;/li&gt;
+               &lt;li&gt;Command List: apt list&lt;/li&gt;
+               &lt;li&gt;Command Purge: apt purge&lt;/li&gt;
+               &lt;li&gt;Command Remove: apt remove&lt;/li&gt;
+               &lt;li&gt;Command Search: apt search&lt;/li&gt;
+               &lt;li&gt;Command Show: apt show&lt;/li&gt;
+               &lt;li&gt;Command Update: apt update&lt;/li&gt;
+               &lt;li&gt;Command Upgrade: apt upgrade&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+</feed>
