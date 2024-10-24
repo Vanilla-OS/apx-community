@@ -46,7 +46,7 @@ const feed = new Atom({
   language: "en",
   updated: new Date(),
   feedLinks: {
-    atom: "https://apx-community.vanillaos.org/updates-feed.xml",
+    atom: "https://apx-community.vanillaos.org/feed.xml",
   },
   authors: [
     {
