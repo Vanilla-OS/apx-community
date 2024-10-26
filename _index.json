@@ -1,6 +1,15 @@
 {
   "stacks": [
     {
+      "name": "vanilla-deno",
+      "base": "docker.io/denoland/deno:latest",
+      "packages": [
+        "deno"
+      ],
+      "pkgmanager": "apt",
+      "builtin": false
+    },
+    {
       "name": "vanilla-golang",
       "base": "ghcr.io/vanilla-os/pico:main",
       "packages": [
