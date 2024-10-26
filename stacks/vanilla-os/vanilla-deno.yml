@@ -1,0 +1,9 @@
+# This stack provides a Deno environment for building and running Deno
+# applications. It is based on the Deno official image.
+
+name: vanilla-deno
+base: docker.io/denoland/deno:latest
+packages:
+  - deno
+pkgmanager: apt
+builtin: false
