@@ -1,9 +1,9 @@
-# This stack provides a Golang environment for building and running Golang
+# This stack provides a Node.js environment for building and running Node.js
 # applications. It is based on the Vanilla OS Pico image.
 
-name: vanilla-golang
+name: vanilla-node
 base: ghcr.io/vanilla-os/pico:main
 packages:
-  - golang
+  - nodejs
 pkgmanager: apt
 builtin: false
