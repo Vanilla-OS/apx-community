@@ -3,7 +3,7 @@
   <title>Apx Community</title>
   <subtitle>Live feed of new stacks and package managers from the Apx Community.</subtitle>
   <link rel="alternate" href="https://apx.vanillaos.org/"/>
-  <updated>2024-10-26T19:33:10.877Z</updated>
+  <updated>2024-10-28T15:30:29.607Z</updated>
   <generator>Feed for Deno</generator>
   <author>
     <name>Vanilla OS Contributors</name>
@@ -13,7 +13,7 @@
     <title>New Stack: vanilla-deno</title>
     <link href="https://apx.vanillaos.org/community"/>
     <id>vanilla-deno</id>
-    <updated>2024-10-26T19:33:10.877Z</updated>
+    <updated>2024-10-28T15:30:29.607Z</updated>
     <summary>New stack published.</summary>
     <content type="html">&lt;ul&gt;
                &lt;li&gt;Base: docker.io/denoland/deno:latest&lt;/li&gt;
@@ -26,7 +26,7 @@
     <title>New Stack: vanilla-golang</title>
     <link href="https://apx.vanillaos.org/community"/>
     <id>vanilla-golang</id>
-    <updated>2024-10-26T19:33:10.877Z</updated>
+    <updated>2024-10-28T15:30:29.607Z</updated>
     <summary>New stack published.</summary>
     <content type="html">&lt;ul&gt;
                &lt;li&gt;Base: ghcr.io/vanilla-os/pico:main&lt;/li&gt;
@@ -36,10 +36,23 @@
              &lt;/ul&gt;</content>
   </entry>
   <entry>
+    <title>New Stack: vanilla-node</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>vanilla-node</id>
+    <updated>2024-10-28T15:30:29.607Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: ghcr.io/vanilla-os/pico:main&lt;/li&gt;
+               &lt;li&gt;Packages: nodejs&lt;/li&gt;
+               &lt;li&gt;Package Manager: apt&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
     <title>New Package Manager: apt</title>
     <link href="https://apx.vanillaos.org/community"/>
     <id>apt</id>
-    <updated>2024-10-26T19:33:10.877Z</updated>
+    <updated>2024-10-28T15:30:29.607Z</updated>
     <summary>New package manager published.</summary>
     <content type="html">&lt;ul&gt;
                &lt;li&gt;Model: 2&lt;/li&gt;

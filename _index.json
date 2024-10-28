@@ -17,6 +17,15 @@
       ],
       "pkgmanager": "apt",
       "builtin": false
+    },
+    {
+      "name": "vanilla-node",
+      "base": "ghcr.io/vanilla-os/pico:main",
+      "packages": [
+        "nodejs"
+      ],
+      "pkgmanager": "apt",
+      "builtin": false
     }
   ],
   "pkgManagers": [
