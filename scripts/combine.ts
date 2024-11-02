@@ -1,4 +1,3 @@
-import { walk } from "jsr:@std/fs";
 import { parse } from "jsr:@std/yaml";
 
 interface Stack {
@@ -31,27 +30,28 @@ async function parseYamlFile(filePath: string): Promise<unknown> {
   return parse(fileContent);
 }
 
-async function collectData<T>(
+async function collectData<T, D>(
   dir: string,
-  transform: (data: all) => T,
+  transform: (data: D) => T,
 ): Promise<T[]> {
   const items: T[] = [];
 
-  for await (
-    const entry of walk(dir, {
-      exts: [".yaml", ".yml"],
-      includeDirs: false,
-    })
-  ) {
-    const data = await parseYamlFile(entry.path);
-    items.push(transform(data));
+  for await (const entry of Deno.readDir(dir)) {
+    // Only process files with .yaml or .yml extensions
+    if (
+      entry.isFile &&
+      (entry.name.endsWith(".yaml") || entry.name.endsWith(".yml"))
+    ) {
+      const data = await parseYamlFile(`${dir}/${entry.name}`) as D;
+      items.push(transform(data));
+    }
   }
 
   return items;
 }
 
 function collectStacks(stacksDir: string): Promise<Stack[]> {
-  return collectData(stacksDir, (data) => ({
+  return collectData<Stack, Stack>(stacksDir, (data) => ({
     name: data.name,
     base: data.base,
     packages: data.packages,
@@ -61,7 +61,7 @@ function collectStacks(stacksDir: string): Promise<Stack[]> {
 }
 
 function collectPkgManagers(pkgManagersDir: string): Promise<PkgManager[]> {
-  return collectData(pkgManagersDir, (data) => ({
+  return collectData<PkgManager, PkgManager>(pkgManagersDir, (data) => ({
     name: data.name,
     model: data.model,
     needsudo: data.needsudo,
