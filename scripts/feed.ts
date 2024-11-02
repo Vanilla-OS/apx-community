@@ -1,5 +1,4 @@
 import { Atom } from "jsr:@feed/feed";
-import { dirname, join } from "jsr:@std/path";
 
 interface Stack {
   name: string;
@@ -31,10 +30,8 @@ interface UpdateData {
   pkgManagers?: pkgManager[];
 }
 
-const __dirname = dirname(new URL(import.meta.url).pathname);
-
 const data: UpdateData = JSON.parse(
-  await Deno.readTextFile(join(__dirname, "../_index.json")),
+  await Deno.readTextFile(new URL("../_index.json", import.meta.url).pathname),
 );
 
 const feed = new Atom({
@@ -44,7 +41,6 @@ const feed = new Atom({
   id: "https://apx.vanillaos.org/",
   link: "https://apx.vanillaos.org/",
   language: "en",
-  updated: new Date(),
   feedLinks: {
     atom: "https://apx-community.vanillaos.org/feed.xml",
   },
@@ -108,6 +104,9 @@ pkgManagers.forEach((pkgManager: pkgManager) => {
   });
 });
 
-await Deno.writeTextFile(join(__dirname, "../feed.xml"), feed.build());
+await Deno.writeTextFile(
+  new URL("../feed.xml", import.meta.url).pathname,
+  feed.build(),
+);
 
 console.log("Atom feed generated.");
