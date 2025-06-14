@@ -1,0 +1,14 @@
+name: zypper
+model: 2
+needsudo: true
+cmdautoremove: zypper
+cmdclean: zypper clean
+cmdinstall: zypper install
+cmdlist: zypper pa --installed-only
+cmdpurge: zypper remove
+cmdremove: zypper remove
+cmdsearch: zypper search
+cmdshow: zypper info
+cmdupdate: zypper dup
+cmdupgrade: zypper dup
+builtin: true
