@@ -3,56 +3,61 @@
   <title>Apx Community</title>
   <subtitle>Live feed of new stacks and package managers from the Apx Community.</subtitle>
   <link rel="alternate" href="https://apx.vanillaos.org/"/>
-  <updated>2024-10-28T15:30:29.607Z</updated>
+  <updated>2025-06-14T17:36:05.014Z</updated>
   <generator>Feed for Deno</generator>
   <author>
     <name>Vanilla OS Contributors</name>
     <email>info@vanillaos.org</email>
   </author>
   <entry>
-    <title>New Stack: vanilla-deno</title>
+    <title>New Package Manager: apk</title>
     <link href="https://apx.vanillaos.org/community"/>
-    <id>vanilla-deno</id>
-    <updated>2024-10-28T15:30:29.607Z</updated>
-    <summary>New stack published.</summary>
+    <id>apk</id>
+    <updated>2025-06-14T17:36:05.014Z</updated>
+    <summary>New package manager published.</summary>
     <content type="html">&lt;ul&gt;
-               &lt;li&gt;Base: docker.io/denoland/deno:latest&lt;/li&gt;
-               &lt;li&gt;Packages: deno&lt;/li&gt;
-               &lt;li&gt;Package Manager: apt&lt;/li&gt;
-               &lt;li&gt;Builtin: No&lt;/li&gt;
+               &lt;li&gt;Model: 2&lt;/li&gt;
+               &lt;li&gt;Needs Sudo: Yes&lt;/li&gt;
+               &lt;li&gt;Command Autoremove: apk&lt;/li&gt;
+               &lt;li&gt;Command Clean: apk&lt;/li&gt;
+               &lt;li&gt;Command Install: apk add&lt;/li&gt;
+               &lt;li&gt;Command List: apk list&lt;/li&gt;
+               &lt;li&gt;Command Purge: apk del&lt;/li&gt;
+               &lt;li&gt;Command Remove: apk del&lt;/li&gt;
+               &lt;li&gt;Command Search: apk search&lt;/li&gt;
+               &lt;li&gt;Command Show: apk info&lt;/li&gt;
+               &lt;li&gt;Command Update: apk update&lt;/li&gt;
+               &lt;li&gt;Command Upgrade: apk upgrade --available&lt;/li&gt;
+               &lt;li&gt;Builtin: Yes&lt;/li&gt;
              &lt;/ul&gt;</content>
   </entry>
   <entry>
-    <title>New Stack: vanilla-golang</title>
+    <title>New Package Manager: pacman</title>
     <link href="https://apx.vanillaos.org/community"/>
-    <id>vanilla-golang</id>
-    <updated>2024-10-28T15:30:29.607Z</updated>
-    <summary>New stack published.</summary>
+    <id>pacman</id>
+    <updated>2025-06-14T17:36:05.014Z</updated>
+    <summary>New package manager published.</summary>
     <content type="html">&lt;ul&gt;
-               &lt;li&gt;Base: ghcr.io/vanilla-os/pico:main&lt;/li&gt;
-               &lt;li&gt;Packages: golang&lt;/li&gt;
-               &lt;li&gt;Package Manager: apt&lt;/li&gt;
-               &lt;li&gt;Builtin: No&lt;/li&gt;
-             &lt;/ul&gt;</content>
-  </entry>
-  <entry>
-    <title>New Stack: vanilla-node</title>
-    <link href="https://apx.vanillaos.org/community"/>
-    <id>vanilla-node</id>
-    <updated>2024-10-28T15:30:29.607Z</updated>
-    <summary>New stack published.</summary>
-    <content type="html">&lt;ul&gt;
-               &lt;li&gt;Base: ghcr.io/vanilla-os/pico:main&lt;/li&gt;
-               &lt;li&gt;Packages: nodejs&lt;/li&gt;
-               &lt;li&gt;Package Manager: apt&lt;/li&gt;
-               &lt;li&gt;Builtin: No&lt;/li&gt;
+               &lt;li&gt;Model: 2&lt;/li&gt;
+               &lt;li&gt;Needs Sudo: Yes&lt;/li&gt;
+               &lt;li&gt;Command Autoremove: pacman -Qdtq&lt;/li&gt;
+               &lt;li&gt;Command Clean: pacman -Sc&lt;/li&gt;
+               &lt;li&gt;Command Install: pacman -S&lt;/li&gt;
+               &lt;li&gt;Command List: pacman -Qe&lt;/li&gt;
+               &lt;li&gt;Command Purge: pacman -Rns&lt;/li&gt;
+               &lt;li&gt;Command Remove: pacman -R&lt;/li&gt;
+               &lt;li&gt;Command Search: pacman -Ss&lt;/li&gt;
+               &lt;li&gt;Command Show: pacman -Si&lt;/li&gt;
+               &lt;li&gt;Command Update: pacman -Sy&lt;/li&gt;
+               &lt;li&gt;Command Upgrade: pacman -Syu&lt;/li&gt;
+               &lt;li&gt;Builtin: Yes&lt;/li&gt;
              &lt;/ul&gt;</content>
   </entry>
   <entry>
     <title>New Package Manager: apt</title>
     <link href="https://apx.vanillaos.org/community"/>
     <id>apt</id>
-    <updated>2024-10-28T15:30:29.607Z</updated>
+    <updated>2025-06-14T17:36:05.014Z</updated>
     <summary>New package manager published.</summary>
     <content type="html">&lt;ul&gt;
                &lt;li&gt;Model: 2&lt;/li&gt;
@@ -68,6 +73,50 @@
                &lt;li&gt;Command Update: apt update&lt;/li&gt;
                &lt;li&gt;Command Upgrade: apt upgrade&lt;/li&gt;
                &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Package Manager: dnf</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>dnf</id>
+    <updated>2025-06-14T17:36:05.014Z</updated>
+    <summary>New package manager published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Model: 2&lt;/li&gt;
+               &lt;li&gt;Needs Sudo: Yes&lt;/li&gt;
+               &lt;li&gt;Command Autoremove: dnf autoremove&lt;/li&gt;
+               &lt;li&gt;Command Clean: dnf clean&lt;/li&gt;
+               &lt;li&gt;Command Install: dnf install&lt;/li&gt;
+               &lt;li&gt;Command List: dnf list&lt;/li&gt;
+               &lt;li&gt;Command Purge: dnf remove&lt;/li&gt;
+               &lt;li&gt;Command Remove: dnf remove&lt;/li&gt;
+               &lt;li&gt;Command Search: dnf search&lt;/li&gt;
+               &lt;li&gt;Command Show: dnf info&lt;/li&gt;
+               &lt;li&gt;Command Update: dnf upgrade --refresh&lt;/li&gt;
+               &lt;li&gt;Command Upgrade: dnf upgrade&lt;/li&gt;
+               &lt;li&gt;Builtin: Yes&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Package Manager: zypper</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>zypper</id>
+    <updated>2025-06-14T17:36:05.014Z</updated>
+    <summary>New package manager published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Model: 2&lt;/li&gt;
+               &lt;li&gt;Needs Sudo: Yes&lt;/li&gt;
+               &lt;li&gt;Command Autoremove: zypper&lt;/li&gt;
+               &lt;li&gt;Command Clean: zypper clean&lt;/li&gt;
+               &lt;li&gt;Command Install: zypper install&lt;/li&gt;
+               &lt;li&gt;Command List: zypper pa --installed-only&lt;/li&gt;
+               &lt;li&gt;Command Purge: zypper remove&lt;/li&gt;
+               &lt;li&gt;Command Remove: zypper remove&lt;/li&gt;
+               &lt;li&gt;Command Search: zypper search&lt;/li&gt;
+               &lt;li&gt;Command Show: zypper info&lt;/li&gt;
+               &lt;li&gt;Command Update: zypper dup&lt;/li&gt;
+               &lt;li&gt;Command Upgrade: zypper dup&lt;/li&gt;
+               &lt;li&gt;Builtin: Yes&lt;/li&gt;
              &lt;/ul&gt;</content>
   </entry>
 </feed>
