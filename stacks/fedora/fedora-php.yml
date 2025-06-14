@@ -1,0 +1,8 @@
+# This stack provides a PHP development environment based on Fedora.
+name: fedora-php
+base: docker.io/fedora:latest
+packages:
+  - php
+  - php-cli
+pkgmanager: dnf
+builtin: false

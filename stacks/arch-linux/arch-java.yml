@@ -1,0 +1,7 @@
+# This stack provides a Java development environment based on Arch Linux.
+name: arch-java
+base: docker.io/library/archlinux:latest
+packages:
+  - jdk-openjdk
+pkgmanager: pacman
+builtin: false

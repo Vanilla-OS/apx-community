@@ -1,0 +1,7 @@
+# This stack provides a Go development environment based on Arch Linux.
+name: arch-go
+base: docker.io/library/archlinux:latest
+packages:
+  - go
+pkgmanager: pacman
+builtin: false

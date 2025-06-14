@@ -1,0 +1,7 @@
+# This stack provides a Java development environment based on Fedora.
+name: fedora-java
+base: docker.io/fedora:latest
+packages:
+  - java-latest-openjdk
+pkgmanager: dnf
+builtin: false
