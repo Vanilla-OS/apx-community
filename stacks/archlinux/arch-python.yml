@@ -1,4 +1,5 @@
 # This stack provides a Python development environment based on Arch Linux.
+
 name: arch-python
 base: docker.io/library/archlinux:latest
 packages:

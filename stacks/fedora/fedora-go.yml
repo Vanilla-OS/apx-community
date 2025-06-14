@@ -1,4 +1,5 @@
 # This stack provides a Go development environment based on Fedora.
+
 name: fedora-go
 base: docker.io/fedora:latest
 packages:

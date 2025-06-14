@@ -1,4 +1,5 @@
 # This stack provides a Node.js development environment based on Ubuntu.
+
 name: ubuntu-node
 base: docker.io/library/ubuntu:latest
 packages:

@@ -1,4 +1,5 @@
 # This stack provides a Python development environment based on Fedora.
+
 name: fedora-python
 base: docker.io/fedora:latest
 packages:

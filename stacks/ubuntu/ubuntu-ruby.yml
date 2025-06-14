@@ -1,4 +1,5 @@
 # This stack provides a Ruby development environment based on Ubuntu.
+
 name: ubuntu-ruby
 base: docker.io/library/ubuntu:latest
 packages:

@@ -1,4 +1,5 @@
 # This stack provides a Rust development environment based on Fedora.
+
 name: fedora-rust
 base: docker.io/fedora:latest
 packages:

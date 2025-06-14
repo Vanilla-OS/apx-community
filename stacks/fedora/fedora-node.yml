@@ -1,4 +1,5 @@
 # This stack provides a Node.js development environment based on Fedora.
+
 name: fedora-node
 base: docker.io/fedora:latest
 packages:

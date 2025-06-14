@@ -1,7 +1,0 @@
-# This stack provides a Docker-in-Docker environment based on Ubuntu.
-name: ubuntu-docker
-base: docker.io/library/ubuntu:latest
-packages:
-  - docker.io
-pkgmanager: apt
-builtin: false
