@@ -33,50 +33,74 @@ async function parseYamlFile(filePath: string): Promise<unknown> {
 async function collectData<T, D>(
   dir: string,
   transform: (data: D) => T,
+  recursive = false,
 ): Promise<T[]> {
   const items: T[] = [];
 
-  for await (const entry of Deno.readDir(dir)) {
-    // Only process files with .yaml or .yml extensions
-    if (
-      entry.isFile &&
-      (entry.name.endsWith(".yaml") || entry.name.endsWith(".yml"))
-    ) {
-      const data = await parseYamlFile(`${dir}/${entry.name}`) as D;
-      items.push(transform(data));
+  try {
+    for await (const entry of Deno.readDir(dir)) {
+      const entryPath = `${dir}/${entry.name}`;
+      if (entry.isDirectory && recursive) {
+        const subItems = await collectData<T, D>(
+          entryPath,
+          transform,
+          recursive,
+        );
+        items.push(...subItems);
+      } else if (
+        entry.isFile &&
+        (entry.name.endsWith(".yaml") || entry.name.endsWith(".yml"))
+      ) {
+        try {
+          const data = await parseYamlFile(entryPath) as D;
+          items.push(transform(data));
+        } catch {
+          console.error(`Failed to parse YAML file: ${entryPath}`);
+        }
+      }
     }
+  } catch {
+    console.error(`Failed to read directory: ${dir}`);
   }
 
   return items;
 }
 
 function collectStacks(stacksDir: string): Promise<Stack[]> {
-  return collectData<Stack, Stack>(stacksDir, (data) => ({
-    name: data.name,
-    base: data.base,
-    packages: data.packages,
-    pkgmanager: data.pkgmanager,
-    builtin: data.builtin,
-  }));
+  return collectData<Stack, Stack>(
+    stacksDir,
+    (data) => ({
+      name: data.name,
+      base: data.base,
+      packages: data.packages,
+      pkgmanager: data.pkgmanager,
+      builtin: data.builtin,
+    }),
+    true,
+  );
 }
 
 function collectPkgManagers(pkgManagersDir: string): Promise<PkgManager[]> {
-  return collectData<PkgManager, PkgManager>(pkgManagersDir, (data) => ({
-    name: data.name,
-    model: data.model,
-    needsudo: data.needsudo,
-    cmdautoremove: data.cmdautoremove,
-    cmdclean: data.cmdclean,
-    cmdinstall: data.cmdinstall,
-    cmdlist: data.cmdlist,
-    cmdpurge: data.cmdpurge,
-    cmdremove: data.cmdremove,
-    cmdsearch: data.cmdsearch,
-    cmdshow: data.cmdshow,
-    cmdupdate: data.cmdupdate,
-    cmdupgrade: data.cmdupgrade,
-    builtin: data.builtin,
-  }));
+  return collectData<PkgManager, PkgManager>(
+    pkgManagersDir,
+    (data) => ({
+      name: data.name,
+      model: data.model,
+      needsudo: data.needsudo,
+      cmdautoremove: data.cmdautoremove,
+      cmdclean: data.cmdclean,
+      cmdinstall: data.cmdinstall,
+      cmdlist: data.cmdlist,
+      cmdpurge: data.cmdpurge,
+      cmdremove: data.cmdremove,
+      cmdsearch: data.cmdsearch,
+      cmdshow: data.cmdshow,
+      cmdupdate: data.cmdupdate,
+      cmdupgrade: data.cmdupgrade,
+      builtin: data.builtin,
+    }),
+    false,
+  );
 }
 
 async function writeToJson(
