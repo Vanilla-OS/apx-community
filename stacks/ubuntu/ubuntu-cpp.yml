@@ -1,0 +1,8 @@
+# This stack provides a C/C++ development environment based on Ubuntu.
+name: ubuntu-cpp
+base: docker.io/library/ubuntu:latest
+packages:
+  - build-essential
+  - gdb
+pkgmanager: apt
+builtin: false

@@ -1,0 +1,7 @@
+# This stack provides a Go development environment based on Ubuntu.
+name: ubuntu-go
+base: docker.io/library/ubuntu:latest
+packages:
+  - golang
+pkgmanager: apt
+builtin: false

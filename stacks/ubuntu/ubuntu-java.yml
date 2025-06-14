@@ -1,0 +1,7 @@
+# This stack provides a Java development environment based on Ubuntu.
+name: ubuntu-java
+base: docker.io/library/ubuntu:latest
+packages:
+  - default-jdk
+pkgmanager: apt
+builtin: false

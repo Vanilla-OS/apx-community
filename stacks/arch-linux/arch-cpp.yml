@@ -1,0 +1,8 @@
+# This stack provides a C/C++ development environment based on Arch Linux.
+name: arch-cpp
+base: docker.io/library/archlinux:latest
+packages:
+  - gcc
+  - make
+pkgmanager: pacman
+builtin: false

@@ -1,0 +1,7 @@
+# This stack provides a .NET development environment based on Ubuntu.
+name: ubuntu-dotnet
+base: docker.io/library/ubuntu:latest
+packages:
+  - dotnet-sdk-7.0
+pkgmanager: apt
+builtin: false

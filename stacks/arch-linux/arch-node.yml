@@ -1,0 +1,8 @@
+# This stack provides a Node.js development environment based on Arch Linux.
+name: arch-node
+base: docker.io/library/archlinux:latest
+packages:
+  - nodejs
+  - npm
+pkgmanager: pacman
+builtin: false

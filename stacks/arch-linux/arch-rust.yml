@@ -1,0 +1,7 @@
+# This stack provides a Rust development environment based on Arch Linux.
+name: arch-rust
+base: docker.io/library/archlinux:latest
+packages:
+  - rust
+pkgmanager: pacman
+builtin: false

@@ -1,0 +1,8 @@
+# This stack provides a Python development environment based on Ubuntu.
+name: ubuntu-python
+base: docker.io/library/ubuntu:latest
+packages:
+  - python3
+  - python3-pip
+pkgmanager: apt
+builtin: false

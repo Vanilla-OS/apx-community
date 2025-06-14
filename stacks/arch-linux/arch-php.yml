@@ -1,0 +1,8 @@
+# This stack provides a PHP development environment based on Arch Linux.
+name: arch-php
+base: docker.io/library/archlinux:latest
+packages:
+  - php
+  - php-cli
+pkgmanager: pacman
+builtin: false

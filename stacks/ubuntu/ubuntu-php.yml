@@ -1,0 +1,8 @@
+# This stack provides a PHP development environment based on Ubuntu.
+name: ubuntu-php
+base: docker.io/library/ubuntu:latest
+packages:
+  - php
+  - php-cli
+pkgmanager: apt
+builtin: false
