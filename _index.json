@@ -1,5 +1,266 @@
 {
-  "stacks": [],
+  "stacks": [
+    {
+      "name": "fedora-php",
+      "base": "docker.io/fedora:latest",
+      "packages": [
+        "php",
+        "php-cli"
+      ],
+      "pkgmanager": "dnf",
+      "builtin": false
+    },
+    {
+      "name": "fedora-rust",
+      "base": "docker.io/fedora:latest",
+      "packages": [
+        "rust"
+      ],
+      "pkgmanager": "dnf",
+      "builtin": false
+    },
+    {
+      "name": "fedora-python",
+      "base": "docker.io/fedora:latest",
+      "packages": [
+        "python3",
+        "python3-pip"
+      ],
+      "pkgmanager": "dnf",
+      "builtin": false
+    },
+    {
+      "name": "fedora-cpp",
+      "base": "docker.io/fedora:latest",
+      "packages": [
+        "gcc",
+        "gcc-c++",
+        "make"
+      ],
+      "pkgmanager": "dnf",
+      "builtin": false
+    },
+    {
+      "name": "fedora-java",
+      "base": "docker.io/fedora:latest",
+      "packages": [
+        "java-latest-openjdk"
+      ],
+      "pkgmanager": "dnf",
+      "builtin": false
+    },
+    {
+      "name": "fedora-go",
+      "base": "docker.io/fedora:latest",
+      "packages": [
+        "golang"
+      ],
+      "pkgmanager": "dnf",
+      "builtin": false
+    },
+    {
+      "name": "fedora-node",
+      "base": "docker.io/fedora:latest",
+      "packages": [
+        "nodejs",
+        "npm"
+      ],
+      "pkgmanager": "dnf",
+      "builtin": false
+    },
+    {
+      "name": "arch-node",
+      "base": "docker.io/library/archlinux:latest",
+      "packages": [
+        "nodejs",
+        "npm"
+      ],
+      "pkgmanager": "pacman",
+      "builtin": false
+    },
+    {
+      "name": "arch-php",
+      "base": "docker.io/library/archlinux:latest",
+      "packages": [
+        "php",
+        "php-cli"
+      ],
+      "pkgmanager": "pacman",
+      "builtin": false
+    },
+    {
+      "name": "arch-go",
+      "base": "docker.io/library/archlinux:latest",
+      "packages": [
+        "go"
+      ],
+      "pkgmanager": "pacman",
+      "builtin": false
+    },
+    {
+      "name": "arch-java",
+      "base": "docker.io/library/archlinux:latest",
+      "packages": [
+        "jdk-openjdk"
+      ],
+      "pkgmanager": "pacman",
+      "builtin": false
+    },
+    {
+      "name": "arch-python",
+      "base": "docker.io/library/archlinux:latest",
+      "packages": [
+        "python",
+        "python-pip"
+      ],
+      "pkgmanager": "pacman",
+      "builtin": false
+    },
+    {
+      "name": "arch-rust",
+      "base": "docker.io/library/archlinux:latest",
+      "packages": [
+        "rust"
+      ],
+      "pkgmanager": "pacman",
+      "builtin": false
+    },
+    {
+      "name": "arch-cpp",
+      "base": "docker.io/library/archlinux:latest",
+      "packages": [
+        "gcc",
+        "make"
+      ],
+      "pkgmanager": "pacman",
+      "builtin": false
+    },
+    {
+      "name": "vanilla-golang",
+      "base": "ghcr.io/vanilla-os/pico:main",
+      "packages": [
+        "golang"
+      ],
+      "pkgmanager": "apt",
+      "builtin": false
+    },
+    {
+      "name": "vanilla-node",
+      "base": "ghcr.io/vanilla-os/pico:main",
+      "packages": [
+        "nodejs"
+      ],
+      "pkgmanager": "apt",
+      "builtin": false
+    },
+    {
+      "name": "vanilla-deno",
+      "base": "docker.io/denoland/deno:latest",
+      "packages": [
+        "deno"
+      ],
+      "pkgmanager": "apt",
+      "builtin": false
+    },
+    {
+      "name": "ubuntu-rust",
+      "base": "docker.io/library/ubuntu:latest",
+      "packages": [
+        "rustc",
+        "cargo"
+      ],
+      "pkgmanager": "apt",
+      "builtin": false
+    },
+    {
+      "name": "ubuntu-ruby",
+      "base": "docker.io/library/ubuntu:latest",
+      "packages": [
+        "ruby-full"
+      ],
+      "pkgmanager": "apt",
+      "builtin": false
+    },
+    {
+      "name": "ubuntu-php",
+      "base": "docker.io/library/ubuntu:latest",
+      "packages": [
+        "php",
+        "php-cli"
+      ],
+      "pkgmanager": "apt",
+      "builtin": false
+    },
+    {
+      "name": "ubuntu-datascience",
+      "base": "docker.io/library/ubuntu:latest",
+      "packages": [
+        "python3",
+        "python3-pip",
+        "python3-numpy",
+        "python3-pandas"
+      ],
+      "pkgmanager": "apt",
+      "builtin": false
+    },
+    {
+      "name": "ubuntu-node",
+      "base": "docker.io/library/ubuntu:latest",
+      "packages": [
+        "nodejs",
+        "npm"
+      ],
+      "pkgmanager": "apt",
+      "builtin": false
+    },
+    {
+      "name": "ubuntu-go",
+      "base": "docker.io/library/ubuntu:latest",
+      "packages": [
+        "golang"
+      ],
+      "pkgmanager": "apt",
+      "builtin": false
+    },
+    {
+      "name": "ubuntu-python",
+      "base": "docker.io/library/ubuntu:latest",
+      "packages": [
+        "python3",
+        "python3-pip"
+      ],
+      "pkgmanager": "apt",
+      "builtin": false
+    },
+    {
+      "name": "ubuntu-dotnet-9",
+      "base": "docker.io/library/ubuntu:latest",
+      "packages": [
+        "dotnet-sdk-9.0"
+      ],
+      "pkgmanager": "apt",
+      "builtin": false
+    },
+    {
+      "name": "ubuntu-java",
+      "base": "docker.io/library/ubuntu:latest",
+      "packages": [
+        "default-jdk"
+      ],
+      "pkgmanager": "apt",
+      "builtin": false
+    },
+    {
+      "name": "ubuntu-cpp",
+      "base": "docker.io/library/ubuntu:latest",
+      "packages": [
+        "build-essential",
+        "gdb"
+      ],
+      "pkgmanager": "apt",
+      "builtin": false
+    }
+  ],
   "pkgManagers": [
     {
       "name": "apk",

@@ -3,17 +3,368 @@
   <title>Apx Community</title>
   <subtitle>Live feed of new stacks and package managers from the Apx Community.</subtitle>
   <link rel="alternate" href="https://apx.vanillaos.org/"/>
-  <updated>2025-06-14T17:42:25.142Z</updated>
+  <updated>2025-06-14T18:26:53.621Z</updated>
   <generator>Feed for Deno</generator>
   <author>
     <name>Vanilla OS Contributors</name>
     <email>info@vanillaos.org</email>
   </author>
   <entry>
+    <title>New Stack: fedora-php</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>fedora-php</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/fedora:latest&lt;/li&gt;
+               &lt;li&gt;Packages: php, php-cli&lt;/li&gt;
+               &lt;li&gt;Package Manager: dnf&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: fedora-rust</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>fedora-rust</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/fedora:latest&lt;/li&gt;
+               &lt;li&gt;Packages: rust&lt;/li&gt;
+               &lt;li&gt;Package Manager: dnf&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: fedora-python</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>fedora-python</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/fedora:latest&lt;/li&gt;
+               &lt;li&gt;Packages: python3, python3-pip&lt;/li&gt;
+               &lt;li&gt;Package Manager: dnf&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: fedora-cpp</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>fedora-cpp</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/fedora:latest&lt;/li&gt;
+               &lt;li&gt;Packages: gcc, gcc-c++, make&lt;/li&gt;
+               &lt;li&gt;Package Manager: dnf&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: fedora-java</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>fedora-java</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/fedora:latest&lt;/li&gt;
+               &lt;li&gt;Packages: java-latest-openjdk&lt;/li&gt;
+               &lt;li&gt;Package Manager: dnf&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: fedora-go</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>fedora-go</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/fedora:latest&lt;/li&gt;
+               &lt;li&gt;Packages: golang&lt;/li&gt;
+               &lt;li&gt;Package Manager: dnf&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: fedora-node</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>fedora-node</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/fedora:latest&lt;/li&gt;
+               &lt;li&gt;Packages: nodejs, npm&lt;/li&gt;
+               &lt;li&gt;Package Manager: dnf&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: arch-node</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>arch-node</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/library/archlinux:latest&lt;/li&gt;
+               &lt;li&gt;Packages: nodejs, npm&lt;/li&gt;
+               &lt;li&gt;Package Manager: pacman&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: arch-php</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>arch-php</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/library/archlinux:latest&lt;/li&gt;
+               &lt;li&gt;Packages: php, php-cli&lt;/li&gt;
+               &lt;li&gt;Package Manager: pacman&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: arch-go</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>arch-go</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/library/archlinux:latest&lt;/li&gt;
+               &lt;li&gt;Packages: go&lt;/li&gt;
+               &lt;li&gt;Package Manager: pacman&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: arch-java</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>arch-java</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/library/archlinux:latest&lt;/li&gt;
+               &lt;li&gt;Packages: jdk-openjdk&lt;/li&gt;
+               &lt;li&gt;Package Manager: pacman&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: arch-python</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>arch-python</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/library/archlinux:latest&lt;/li&gt;
+               &lt;li&gt;Packages: python, python-pip&lt;/li&gt;
+               &lt;li&gt;Package Manager: pacman&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: arch-rust</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>arch-rust</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/library/archlinux:latest&lt;/li&gt;
+               &lt;li&gt;Packages: rust&lt;/li&gt;
+               &lt;li&gt;Package Manager: pacman&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: arch-cpp</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>arch-cpp</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/library/archlinux:latest&lt;/li&gt;
+               &lt;li&gt;Packages: gcc, make&lt;/li&gt;
+               &lt;li&gt;Package Manager: pacman&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: vanilla-golang</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>vanilla-golang</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: ghcr.io/vanilla-os/pico:main&lt;/li&gt;
+               &lt;li&gt;Packages: golang&lt;/li&gt;
+               &lt;li&gt;Package Manager: apt&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: vanilla-node</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>vanilla-node</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: ghcr.io/vanilla-os/pico:main&lt;/li&gt;
+               &lt;li&gt;Packages: nodejs&lt;/li&gt;
+               &lt;li&gt;Package Manager: apt&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: vanilla-deno</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>vanilla-deno</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/denoland/deno:latest&lt;/li&gt;
+               &lt;li&gt;Packages: deno&lt;/li&gt;
+               &lt;li&gt;Package Manager: apt&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: ubuntu-rust</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>ubuntu-rust</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/library/ubuntu:latest&lt;/li&gt;
+               &lt;li&gt;Packages: rustc, cargo&lt;/li&gt;
+               &lt;li&gt;Package Manager: apt&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: ubuntu-ruby</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>ubuntu-ruby</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/library/ubuntu:latest&lt;/li&gt;
+               &lt;li&gt;Packages: ruby-full&lt;/li&gt;
+               &lt;li&gt;Package Manager: apt&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: ubuntu-php</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>ubuntu-php</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/library/ubuntu:latest&lt;/li&gt;
+               &lt;li&gt;Packages: php, php-cli&lt;/li&gt;
+               &lt;li&gt;Package Manager: apt&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: ubuntu-datascience</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>ubuntu-datascience</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/library/ubuntu:latest&lt;/li&gt;
+               &lt;li&gt;Packages: python3, python3-pip, python3-numpy, python3-pandas&lt;/li&gt;
+               &lt;li&gt;Package Manager: apt&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: ubuntu-node</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>ubuntu-node</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/library/ubuntu:latest&lt;/li&gt;
+               &lt;li&gt;Packages: nodejs, npm&lt;/li&gt;
+               &lt;li&gt;Package Manager: apt&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: ubuntu-go</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>ubuntu-go</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/library/ubuntu:latest&lt;/li&gt;
+               &lt;li&gt;Packages: golang&lt;/li&gt;
+               &lt;li&gt;Package Manager: apt&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: ubuntu-python</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>ubuntu-python</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/library/ubuntu:latest&lt;/li&gt;
+               &lt;li&gt;Packages: python3, python3-pip&lt;/li&gt;
+               &lt;li&gt;Package Manager: apt&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: ubuntu-dotnet-9</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>ubuntu-dotnet-9</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/library/ubuntu:latest&lt;/li&gt;
+               &lt;li&gt;Packages: dotnet-sdk-9.0&lt;/li&gt;
+               &lt;li&gt;Package Manager: apt&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: ubuntu-java</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>ubuntu-java</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/library/ubuntu:latest&lt;/li&gt;
+               &lt;li&gt;Packages: default-jdk&lt;/li&gt;
+               &lt;li&gt;Package Manager: apt&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>New Stack: ubuntu-cpp</title>
+    <link href="https://apx.vanillaos.org/community"/>
+    <id>ubuntu-cpp</id>
+    <updated>2025-06-14T18:26:53.621Z</updated>
+    <summary>New stack published.</summary>
+    <content type="html">&lt;ul&gt;
+               &lt;li&gt;Base: docker.io/library/ubuntu:latest&lt;/li&gt;
+               &lt;li&gt;Packages: build-essential, gdb&lt;/li&gt;
+               &lt;li&gt;Package Manager: apt&lt;/li&gt;
+               &lt;li&gt;Builtin: No&lt;/li&gt;
+             &lt;/ul&gt;</content>
+  </entry>
+  <entry>
     <title>New Package Manager: apk</title>
     <link href="https://apx.vanillaos.org/community"/>
     <id>apk</id>
-    <updated>2025-06-14T17:42:25.142Z</updated>
+    <updated>2025-06-14T18:26:53.621Z</updated>
     <summary>New package manager published.</summary>
     <content type="html">&lt;ul&gt;
                &lt;li&gt;Model: 2&lt;/li&gt;
@@ -35,7 +386,7 @@
     <title>New Package Manager: pacman</title>
     <link href="https://apx.vanillaos.org/community"/>
     <id>pacman</id>
-    <updated>2025-06-14T17:42:25.142Z</updated>
+    <updated>2025-06-14T18:26:53.621Z</updated>
     <summary>New package manager published.</summary>
     <content type="html">&lt;ul&gt;
                &lt;li&gt;Model: 2&lt;/li&gt;
@@ -57,7 +408,7 @@
     <title>New Package Manager: apt</title>
     <link href="https://apx.vanillaos.org/community"/>
     <id>apt</id>
-    <updated>2025-06-14T17:42:25.142Z</updated>
+    <updated>2025-06-14T18:26:53.621Z</updated>
     <summary>New package manager published.</summary>
     <content type="html">&lt;ul&gt;
                &lt;li&gt;Model: 2&lt;/li&gt;
@@ -79,7 +430,7 @@
     <title>New Package Manager: dnf</title>
     <link href="https://apx.vanillaos.org/community"/>
     <id>dnf</id>
-    <updated>2025-06-14T17:42:25.142Z</updated>
+    <updated>2025-06-14T18:26:53.621Z</updated>
     <summary>New package manager published.</summary>
     <content type="html">&lt;ul&gt;
                &lt;li&gt;Model: 2&lt;/li&gt;
@@ -101,7 +452,7 @@
     <title>New Package Manager: zypper</title>
     <link href="https://apx.vanillaos.org/community"/>
     <id>zypper</id>
-    <updated>2025-06-14T17:42:25.142Z</updated>
+    <updated>2025-06-14T18:26:53.621Z</updated>
     <summary>New package manager published.</summary>
     <content type="html">&lt;ul&gt;
                &lt;li&gt;Model: 2&lt;/li&gt;
