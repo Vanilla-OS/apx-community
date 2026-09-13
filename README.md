@@ -83,3 +83,21 @@ The package manager must be available inside the `base` image. If your image has
 ### How many packages can I include in a stack?
 
 You can include as many packages as you want, but keep in mind that the more packages you include, the longer it will take to install them. A better choice would be to create your custom OCI image and publish it on a registry like GitHub Container Registry or Docker Hub. Then you can use that image as the base in your stack file.
+
+## Use of Generative AI
+
+Maintainers may use generative AI tools as assistants while working on apx-community. Non-trivial assisted commits disclose the tool, model, and scope of the work.
+
+AI tools may assist with code comments, documentation, repetitive code, and issue triage. Maintainers make project decisions and review every assisted change before it is merged.
+
+Use these trailers for non-trivial assisted commits:
+
+```plain
+Assisted-by: <tool>:<model-version>
+AI-Scope: <what the tool generated and the prompt or a short prompt summary>
+```
+
+Single-line completions, renames, and formatting changes do not need trailers.
+
+Coding agents must also follow [AGENTS.md](AGENTS.md) before changing files,
+creating commits, or opening pull requests.
